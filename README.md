@@ -7,4 +7,4 @@ Key features:
 
 2. Generates -out.cms ready for use in Maestro if Desmond version is 2018.1 or later
 
-Contributions welcome for including other molecular dynamics formats to make it universal
+Contributions are most welcome for further improvements and including other molecular dynamics formats to make it universal.
