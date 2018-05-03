@@ -98,5 +98,5 @@ class MergeMDs(Tkinter.Tk):
 
 if __name__ == "__main__":
     app = MergeMDs(None)
-    app.title('TrajMerge: Merge Desmond MD Trajectories')
+    app.title('TrajectoryMergeAssist: Merge Desmond MD Trajectories')
     app.mainloop()
