@@ -12,12 +12,12 @@ authors:
     orcid: 0000-0003-4806-2238
     affiliation: 1
 affiliations:
- - name: Department of Biotechnology, Heritage Institute of Technology
+ - name: Department of Biotechnology, Heritage Institute of Technology, Kolkata, India
    index: 1
  - name: Institution 1
    index: 1
 
- - name: Maulana Abul Kalam Azad University of Technology (formerly West Bengal University of Technology)
+ - name: Maulana Abul Kalam Azad University of Technology (formerly West Bengal University of Technology), India
    index: 2
  - name: Institution 2
    index: 2   
