@@ -71,9 +71,12 @@ class MergeMDs(tkinter.Tk):
         print ("Merging both trajectories into one and generating -out.cms...")
         print ("-------------------------------------------------------------")
         if os.path.isfile("$SCHRODINGER/internal/bin/trj_merge.py"):
-            os.system("$SCHRODINGER/run trj_merge.py %s %s %s -o NewMergedTrajectory-out"%(cms,in1_trj,in2_trj)) #For Desmond Version >= 2018.1 https://www.schrodinger.com/kb/282357
+            os.system("$SCHRODINGER/run trj_merge.py %s %s %s -o NewMergedTrajectory"%(cms,in1_trj,in2_trj)) #For Desmond Version >= 2018.1 https://www.schrodinger.com/kb/282357
         else:
             os.system("$SCHRODINGER/run -FROM desmond manipulate_trj.py %s NewMergedTrajectory %s %s"%(cms,in1_trj,in2_trj))  #For Desmond Version < 2018.1 https://www.schrodinger.com/kb/90
+        if os.path.isfile("$SCHRODINGER/internal/bin/trj_merge.py"):
+            os.system("mv NewMergedTrajectory.cms NewMergedTrajectory-out.cms")
+            
         print ("...Done!")
         exit()
 
