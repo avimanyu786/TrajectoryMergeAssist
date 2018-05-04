@@ -68,11 +68,11 @@ For systems like Ubuntu, *Tkinter* can be installed with a Linux terminal by the
 
 For Python3 on Ubuntu, the terminal command would be: 
 
-``sudo apt-get install python3-tk``.
+``sudo apt-get install python3-tk``
 
 For CentOS type systems, the installation can be done via: 
 
-``sudo yum install tkinter``. 
+``sudo yum install tkinter`` 
 
 For Python3 on CentOS, the preferable command would be: 
 
@@ -80,7 +80,7 @@ For Python3 on CentOS, the preferable command would be:
 
 or
 
-``sudo yum install python36u-tkinter``.
+``sudo yum install python36u-tkinter``
 
 ### Steps to use TrajectoryMergeAssist
 
