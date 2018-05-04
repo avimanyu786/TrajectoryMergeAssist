@@ -66,7 +66,7 @@ For systems like Ubuntu, it can be installed via ``sudo apt-get install python-t
 
 For CentOS type systems, the installation can be done via ``sudo yum install tkinter``. For Python3, the preferable command would be ``sudo yum install python34-tkinter`` or ``sudo yum install python36u-tkinter``.
 
-1. Make sure you keep the TMA.py file in a directory containing the following required input files and directories:
+1. The "TMA.py" file has to be present in a directory containing the following required input files and trajectories:
 
     a. The "-out.cms" file
 
@@ -84,11 +84,11 @@ For CentOS type systems, the installation can be done via ``sudo yum install tki
 
 5.  Navigate to the two "_trj" directories
 
-6.  The 3 choices will be visible in the background terminal so that you can confirm your selections.
+6.  The 3 choices will be visible in the background terminal so that the selections can be confirmed.
 
 7.  Click on "Merge Trajectories"
 
-8.  Wait until you see the "...Done!" message
+8.  Wait until the "...Done!" message
 
 9.  The new merged trajectory along-with the new "-out.cms" file can be found in the same working directory.
 
