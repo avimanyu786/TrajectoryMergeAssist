@@ -58,13 +58,15 @@ making it a requirement to manually rename it to the latter to make it ready for
 Maestro. ``TrajectoryMergeAssist`` also takes care of this by generating an "-out.cms" file
 instead of ".cms".
 
-## Usage Steps
+## Usage
 
 To be able to use the tool, the ``python-tk`` or ``tkinter`` package would be required in addition to Python on Linux.
 
 For systems like Ubuntu, it can be installed via ``sudo apt-get install python-tk`` via a Linux terminal. For Python3, the terminal command would be ``sudo apt-get install python3-tk``.
 
 For CentOS type systems, the installation can be done via ``sudo yum install tkinter``. For Python3, the preferable command would be ``sudo yum install python34-tkinter`` or ``sudo yum install python36u-tkinter``.
+
+### Steps
 
 1. The "TMA.py" file has to be present in a directory containing the following required input files and trajectories:
 
