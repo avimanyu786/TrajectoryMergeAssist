@@ -44,6 +44,11 @@ each extended simulation and that is when this tool becomes very useful. With fu
 extended simulations, the user can use the combined trajectory obtained previously and 
 merge it with the third and so on.
 
+The tool has been written in Python and makes use of *Tkinter*, one of Python's own GUI 
+programming toolkits.
+
+## Key Features
+
 Starting with Desmond 2018.1, a new Desmond script has been introduced and the earlier
 one has been deprecated for merging trajectories. ``TrajectoryMergeAssist`` works with 
 both the latest and earlier versions of Desmond. 
@@ -52,6 +57,41 @@ Unlike versions prior to 2018.1, Desmond creates "merged.cms" files instead of "
 making it a requirement to manually rename it to the latter to make it ready for viewing on
 Maestro. ``TrajectoryMergeAssist`` also takes care of this by generating an "-out.cms" file
 instead of ".cms".
+
+## Usage Steps
+
+To be able to use the tool, the ``python-tk`` or ``tkinter`` package would be required in addition to Python on Linux.
+
+For systems like Ubuntu, it can be installed via ``sudo apt-get install python-tk`` via a Linux terminal. For Python3, the terminal command would be ``sudo apt-get install python3-tk``.
+
+For CentOS type systems, the installation can be done via ``sudo yum install tkinter``. For Python3, the preferable command would be ``sudo yum install python34-tkinter`` or ``sudo yum install python36u-tkinter``.
+
+1. Make sure you keep the TMA.py file in a directory containing the following required input files and directories:
+
+    a. The "-out.cms" file
+
+    b. The first trajectory directory(ends with "_trj")
+
+    c. The second trajectory directory from an extended Desmond MD simulation.
+
+2.  It is strongly recommended to work with the above files from a location like ``/home/username/directory``
+
+3.  Navigate to the directory on a terminal window and run:
+
+    ``python TMA.py``
+
+4.  Select the "-out.cms" file
+
+5.  Navigate to the two "_trj" directories
+
+6.  The 3 choices will be visible in the background terminal so that you can confirm your selections.
+
+7.  Click on "Merge Trajectories"
+
+8.  Wait until you see the "...Done!" message
+
+9.  The new merged trajectory along-with the new "-out.cms" file can be found in the same working directory.
+
 
 # References
 
