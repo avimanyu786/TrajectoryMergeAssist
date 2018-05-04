@@ -1,4 +1,4 @@
-# TrajectoryMergeAssist v1.1.04
+# TrajectoryMergeAssist v1.1.03
 # A python3 based GUI tool that helps in merging two trajectories on Desmond MD
 
 # Copyright (C) 2018 Avimanyu Bandyopadhyay
