@@ -63,61 +63,11 @@ making it a requirement to manually rename it to the latter to make it ready for
 Maestro. ``TrajectoryMergeAssist`` also takes care of this by generating an "-out.cms" file
 instead of ".cms".
 
-## Usage
+## Usage Links
 
-To be able to use the tool, the ``python-tk`` or ``tkinter`` package would be required in addition to Python on Linux.
-
-For systems like Ubuntu, *Tkinter* can be installed with a Linux terminal by the following command: 
-
-``sudo apt-get install python-tk``  
-
-For Python3 on Ubuntu, the terminal command would be: 
-
-``sudo apt-get install python3-tk``
-
-For CentOS type systems, the installation can be done via: 
-
-``sudo yum install tkinter`` 
-
-For Python3 on CentOS, the preferable command would be: 
-
-``sudo yum install python34-tkinter``
-
-or
-
-``sudo yum install python36u-tkinter``
-
-### Steps to use TrajectoryMergeAssist
-
-1. The "TMA.py" or "TMA_PY3.py" file has to be present in a directory containing the following required input files and trajectories:
-
-    a. The "-out.cms" file
-
-    b. The first trajectory directory(ends with "_trj")
-
-    c. The second trajectory directory from an extended Desmond MD simulation.
-
-2.  It is strongly recommended to work with the above files from a location like ``/home/username/directory``
-
-3.  Navigate to the directory on a terminal window and run:
-
-    ``python TMA.py``
-    
-    or
-        
-    ``python3 TMA_PY3.py``      *-- For Python3 Only*
-    
-4.  Select the "-out.cms" file
-
-5.  Navigate to the two "_trj" directories
-
-6.  The 3 choices will be visible in the background terminal so that the selections can be confirmed.
-
-7.  Click on "Merge Trajectories"
-
-8.  Wait until the "...Done!" message
-
-9.  The new merged trajectory along-with the new "-out.cms" file can be found in the same working directory.
+1. [Repository](https://github.com/avimanyu786/TrajectoryMergeAssist)
+2. [Releases](https://github.com/avimanyu786/TrajectoryMergeAssist/releases) 
+3. [Documentation](https://github.com/avimanyu786/TrajectoryMergeAssist/wiki)
 
 # References
 
