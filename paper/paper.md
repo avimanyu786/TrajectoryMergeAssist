@@ -88,7 +88,7 @@ or
 
 ### Steps to use TrajectoryMergeAssist
 
-1. The "TMA.py" file has to be present in a directory containing the following required input files and trajectories:
+1. The "TMA.py" or "TMA_PY3.py" file has to be present in a directory containing the following required input files and trajectories:
 
     a. The "-out.cms" file
 
@@ -101,7 +101,11 @@ or
 3.  Navigate to the directory on a terminal window and run:
 
     ``python TMA.py``
-
+    
+    or
+        
+    ``python3 TMA_PY3.py`` *for python3 users*
+    
 4.  Select the "-out.cms" file
 
 5.  Navigate to the two "_trj" directories
@@ -113,7 +117,6 @@ or
 8.  Wait until the "...Done!" message
 
 9.  The new merged trajectory along-with the new "-out.cms" file can be found in the same working directory.
-
 
 # References
 
