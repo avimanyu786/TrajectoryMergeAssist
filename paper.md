@@ -16,12 +16,12 @@ affiliations:
    index: 1
  - name: Institution 1
    index: 1
-
  - name: Maulana Abul Kalam Azad University of Technology (formerly West Bengal University of Technology), India
    index: 2
  - name: Institution 2
    index: 2   
 date: 03 May 2018
+bibliography: paper.bib
 ---
 
 # Summary
