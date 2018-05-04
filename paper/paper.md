@@ -45,7 +45,7 @@ extended simulations, the user can use the combined trajectory obtained previous
 merge it with the third and so on.
 
 The tool has been written in Python and makes use of *Tkinter*, one of Python's own GUI 
-programming toolkits.
+programming toolkits. Another version has also been written in Python3.
 
 ## Key Features
 
