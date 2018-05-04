@@ -62,7 +62,7 @@ instead of ".cms".
 
 To be able to use the tool, the ``python-tk`` or ``tkinter`` package would be required in addition to Python on Linux.
 
-For systems like Ubuntu, it can be installed with a Linux terminal with the following command: 
+For systems like Ubuntu, *Tkinter* can be installed with a Linux terminal by the following command: 
 
 ``sudo apt-get install python-tk``  
 
