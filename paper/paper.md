@@ -49,9 +49,13 @@ programming toolkits.
 
 ## Key Features
 
+### Works with both the latest and older versions of Desmond
+
 Starting with Desmond 2018.1, a new Desmond script has been introduced and the earlier
-one has been deprecated for merging trajectories. ``TrajectoryMergeAssist`` works with 
-both the latest and earlier versions of Desmond. 
+one has been deprecated for merging trajectories. ``TrajectoryMergeAssist`` checks for the same
+and proceeds accordingly, in order to support both the latest and earlier versions. 
+
+### Generates "-out.cms" file ready for use in Maestro
 
 Unlike versions prior to 2018.1, Desmond creates "merged.cms" files instead of "merged-out.cms",
 making it a requirement to manually rename it to the latter to make it ready for viewing on
