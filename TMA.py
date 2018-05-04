@@ -85,14 +85,11 @@ class MergeMDs(Tkinter.Tk):
 		else:
 			os.system("$SCHRODINGER/run -FROM desmond manipulate_trj.py %s NewMergedTrajectory %s %s"%(cms,in1_trj,in2_trj))  #For Desmond Version < 2018.1 https://www.schrodinger.com/kb/90
 		
-		with tempfile.TemporaryFile() as temp:
-			proc = subprocess.Popen(['echo', '...Done!'], stdout=temp)
-   			proc.wait()
-			temp.seek(0)
-			if os.path.isfile("$SCHRODINGER/internal/bin/trj_merge.py"):
-				os.system("mv NewMergedTrajectory.cms NewMergedTrajectory-out.cms")
-			print temp.read()
-			exit()
+		if os.path.isfile("$SCHRODINGER/internal/bin/trj_merge.py"):
+			os.system("mv NewMergedTrajectory.cms NewMergedTrajectory-out.cms")
+			
+		print "...Done!"
+		exit()
 
 
 
