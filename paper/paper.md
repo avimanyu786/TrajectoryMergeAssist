@@ -104,7 +104,7 @@ or
     
     or
         
-    ``python3 TMA_PY3.py`` *for python3 users*
+    ``python3 TMA_PY3.py`` *For Python3 Users*
     
 4.  Select the "-out.cms" file
 
