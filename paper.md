@@ -41,8 +41,8 @@ each extended simulation and that is when this tool becomes very useful. With fu
 extended simulations, the user can use the combined trajectory obtained previously and 
 merge it with the third and so on.
 
-The tool has been written in Python and makes use of *Tkinter*, one of Python's own GUI 
-programming toolkits. Another version has also been written in Python3.
+The tool has been written in Python 2.7 and makes use of *Tkinter*, one of Python's own GUI 
+programming toolkits. Another version has also been written in Python 3.
 
 ## Key Features
 
