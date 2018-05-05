@@ -21,10 +21,10 @@ bibliography: paper.bib
 
 # Summary
 
-Working with trajectories generated with the Desmond molecular dynamics software
-can be quite inconvenient when simulations are extended multiple number of times 
-with the same. Extended simulations allow Bioinformaticians to observe and interpret 
-plots upto greater lengths of time and also do it at their own time of convenience 
+Working with trajectories[@Robert2015MDTraj] generated with the Desmond molecular dynamics 
+software[@Kevin2006Scalable] can become quite inconvenient when simulations are extended 
+multiple number of times with the same. Extended simulations allow Bioinformaticians to observe 
+and interpret plots upto greater lengths of time and also do it at their own time of convenience 
 when with lesser resources.
 
 To make this process simpler and easier, ``TrajectoryMergeAssist`` was created. 
@@ -34,10 +34,9 @@ steps and observations:
 
 With every gradual extended simulation, the user would like to view the resultant plots
 starting from the first trajectory until the end of the second. The user would be eager
-to view the resultant RMSD/RMSF plot of the same on Desmond (Maestro) after the end of 
-each extended simulation and that is when this tool becomes very useful. With further 
-extended simulations, the user can use the combined trajectory obtained previously and 
-merge it with the third and so on.
+to view the resultant RMSD/RMSF plot of the same after the end of each extended simulation 
+and that is when this tool becomes very useful. With further extended simulations, the user 
+can use the combined trajectory obtained previously and merge it with the third and so on.
 
 The tool has been written in Python 2.7 and makes use of *Tkinter*, one of Python's own GUI 
 programming toolkits. Another version has also been written in Python 3.
@@ -46,7 +45,7 @@ programming toolkits. Another version has also been written in Python 3.
 
 ### Works with both the latest and older versions of Desmond
 
-Starting with Desmond 2018.1, a new Desmond script has been introduced and the earlier
+Starting with Desmond 2018.1[@Desmond], a new Desmond script has been introduced and the earlier
 one has been deprecated for merging trajectories. ``TrajectoryMergeAssist`` checks for the same
 and proceeds accordingly, in order to support both the latest and earlier versions. 
 
@@ -54,7 +53,7 @@ and proceeds accordingly, in order to support both the latest and earlier versio
 
 Unlike versions prior to 2018.1, Desmond creates "merged.cms" files instead of "merged-out.cms",
 making it a requirement to manually rename it to the latter to make it ready for viewing on
-Maestro. ``TrajectoryMergeAssist`` also takes care of this by generating an "-out.cms" file
+Maestro[@Maestro]. ``TrajectoryMergeAssist`` also takes care of this by generating an "-out.cms" file
 instead of ".cms".
 
 ## Usage Links
