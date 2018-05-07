@@ -1,4 +1,7 @@
 # TrajectoryMergeAssist
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1242976.svg)](https://doi.org/10.5281/zenodo.1242976)
+
 A python based GUI tool that helps in merging two sequential trajectories on [Desmond MD (molecular dynamics)](http://www.deshawresearch.com/resources_desmond.html). This is a very useful tool for Bioinformaticians that makes it easier to work with different trajectories generated via extended molecular dynamics simulations on Desmond.
 
 Key features:
