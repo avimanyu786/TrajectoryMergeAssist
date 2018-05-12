@@ -11,3 +11,5 @@ Key features:
 2. Generates -out.cms ready for use in Maestro if Desmond version is 2018.1 or later.
 
 Contributions are most welcome for further improvements and including other molecular dynamics formats to make it universal.
+
+Bandyopadhyay A. (2018) Improving productivity while managing extensive molecular dynamics simulation data. PeerJ Preprints 6:e26920v1 https://doi.org/10.7287/peerj.preprints.26920v1
