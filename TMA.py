@@ -16,81 +16,95 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import Tkinter,tkFileDialog,os
+import Tkinter, tkFileDialog, os
 
 root = Tkinter.Tk()
 root.withdraw()
 
+
 class MergeMDs(Tkinter.Tk):
 
-    def __init__(self,parent):
-        Tkinter.Tk.__init__(self,parent)
+    def __init__(self, parent):
+        Tkinter.Tk.__init__(self, parent)
         self.parent = parent
         self.initialize()
 
     def initialize(self):
         self.grid()
 
-      	button = Tkinter.Button(self, text='Browse "-out.cms" file', command=self.AskInputFile)
-        button.grid(column=0,row=1)
-	
-	button2 = Tkinter.Button(self, text='Choose Trajectory 1', command=self.AskTrajectory1)
-        button2.grid(column=0,row=2)
+        button = Tkinter.Button(self, text='Browse "-out.cms" file', command=self.AskInputFile)
+        button.grid(column=0, row=1)
 
-      	button3 = Tkinter.Button(self, text='Choose Trajectory 2', command=self.AskTrajectory2)
-        button3.grid(column=0,row=3)
+        button2 = Tkinter.Button(self, text='Choose Trajectory 1', command=self.AskTrajectory1)
+        button2.grid(column=0, row=2)
 
-      	button3 = Tkinter.Button(self, text='Merge Trajectories', command=self.MergeTrajectories)
-        button3.grid(column=0,row=4)
-	
-        self.grid_columnconfigure(0,weight=1)
-        self.resizable(True,False)
+        button3 = Tkinter.Button(self, text='Choose Trajectory 2', command=self.AskTrajectory2)
+        button3.grid(column=0, row=3)
+
+        button3 = Tkinter.Button(self, text='Merge Trajectories', command=self.MergeTrajectories)
+        button3.grid(column=0, row=4)
+
+        self.grid_columnconfigure(0, weight=1)
+        self.resizable(True, False)
         self.update()
-        self.geometry("400x120")       
-
+        self.geometry("400x120")
 
     def AskInputFile(self):
 
-		filename = tkFileDialog.askopenfilename(parent=root, title='Choose -out.cms file')
-		global cms
-		cms=os.path.basename(filename)
-		if len(cms) > 0:
-		    print "%s selected" % cms
-	
-
+        filename = tkFileDialog.askopenfilename(parent=root, title='Choose -out.cms file')
+        global cms
+        cms = os.path.basename(filename)
+        if len(cms) > 0:
+            print "%s selected" % cms
 
     def AskTrajectory1(self):
 
-		global in1_trj
-		in1_trj = tkFileDialog.askdirectory(parent=root, initialdir="pwd", title='Please Select Trajectory 1')
-		if len(in1_trj) > 0:
-		    print "You chose %s" % in1_trj
-
+        global in1_trj
+        in1_trj = tkFileDialog.askdirectory(parent=root, initialdir="pwd", title='Please Select Trajectory 1')
+        if len(in1_trj) > 0:
+            print "You chose %s" % in1_trj
 
     def AskTrajectory2(self):
 
-		global in2_trj
-		in2_trj = tkFileDialog.askdirectory(parent=root, initialdir="pwd", title='Please Select Trajectory 2')
-		if len(in2_trj) > 0:
-		    print "You chose %s" % in2_trj
+        global in2_trj
+        in2_trj = tkFileDialog.askdirectory(parent=root, initialdir="pwd", title='Please Select Trajectory 2')
+        if len(in2_trj) > 0:
+            print "You chose %s" % in2_trj
 
     def MergeTrajectories(self):
-		
-		print "-------------------------------------------------------------"
-		print "Merging both trajectories into one and generating -out.cms..."
-		print "-------------------------------------------------------------"
-	
-		if os.path.isfile("$SCHRODINGER/internal/bin/trj_merge.py"):
-			os.system("$SCHRODINGER/run trj_merge.py %s %s %s -o NewMergedTrajectory"%(cms,in1_trj,in2_trj)) #For Desmond Version >= 2018.1 https://www.schrodinger.com/kb/282357
-		else:
-			os.system("$SCHRODINGER/run -FROM desmond manipulate_trj.py %s NewMergedTrajectory %s %s"%(cms,in1_trj,in2_trj))  #For Desmond Version < 2018.1 https://www.schrodinger.com/kb/90
-		
-		if os.path.isfile("$SCHRODINGER/internal/bin/trj_merge.py"):
-			os.system("mv NewMergedTrajectory.cms NewMergedTrajectory-out.cms")
-			
-		print "...Done!"
-		exit()
 
+        print "-------------------------------------------------------------"
+        print "Merging both trajectories into one and generating -out.cms..."
+        print "-------------------------------------------------------------"
+
+        # For Desmond Version >= 2018.1 https://www.schrodinger.com/kb/282357
+
+        if os.path.isfile("/opt/schrodinger2018-3/internal/bin/trj_merge.py"):
+            os.system("/opt/schrodinger2018-3/run trj_merge.py %s %s %s -o NewMergedTrajectory" % (
+            cms, in1_trj, in2_trj))
+            os.system("mv NewMergedTrajectory.cms NewMergedTrajectory-out.cms")
+
+        if os.path.isfile("/opt/schrodinger2018-2/internal/bin/trj_merge.py"):
+            os.system("/opt/schrodinger2018-2/run trj_merge.py %s %s %s -o NewMergedTrajectory" % (
+            cms, in1_trj, in2_trj))
+            os.system("mv NewMergedTrajectory.cms NewMergedTrajectory-out.cms")
+
+        if os.path.isfile("/opt/schrodinger2018-1/internal/bin/trj_merge.py"):
+            os.system("/opt/schrodinger2018-1/run trj_merge.py %s %s %s -o NewMergedTrajectory" % (
+            cms, in1_trj, in2_trj))
+            os.system("mv NewMergedTrajectory.cms NewMergedTrajectory-out.cms")
+
+        else:  # For Desmond Version < 2018.1 https://www.schrodinger.com/kb/90
+            if os.path.isfile("/opt/schrodinger2017-4/desmond-v5.2/bin/Linux-x86_64/manipulate_trj.py"):
+                os.system("/opt/schrodinger2017-4/run -FROM desmond manipulate_trj.py %s NewMergedTrajectory %s %s" % (
+                cms, in1_trj, in2_trj))
+
+            if os.path.isfile("/opt/schrodinger2017-3/desmond-v5.2/bin/Linux-x86_64/manipulate_trj.py"):
+                os.system("/opt/schrodinger2017-3/run -FROM desmond manipulate_trj.py %s NewMergedTrajectory %s %s" % (
+                cms, in1_trj, in2_trj))
+
+        print "...Done!"
+        exit()
 
 
 if __name__ == "__main__":
