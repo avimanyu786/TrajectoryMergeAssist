@@ -8,7 +8,7 @@ Key features:
 
 1. Works with both the latest and older versions of Desmond.
 
-2. Generates -out.cms ready for use in Maestro if Desmond version is 2018.1 or later.
+2. Generates "-out.cms" ready for use in Maestro if Desmond version is 2018.1 or later.
 
 Please refer to the [Wiki](https://github.com/avimanyu786/TrajectoryMergeAssist/wiki) page for hassle-free usage.
 
