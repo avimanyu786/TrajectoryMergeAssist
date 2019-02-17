@@ -1,7 +1,7 @@
-# TrajectoryMergeAssist v1.2
+# TrajectoryMergeAssist v2.0
 # A python based GUI tool that helps in merging two trajectories on Desmond MD
 
-# Copyright (C) 2018 Avimanyu Bandyopadhyay
+# Copyright (C) 2019 Avimanyu Bandyopadhyay
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -52,10 +52,9 @@ class MergeMDs(Tkinter.Tk):
         self.geometry("400x120")
 
     def AskInputFile(self):
-
-        filename = tkFileDialog.askopenfilename(parent=root, title='Choose -out.cms file')
+        
         global cms
-        cms = os.path.basename(filename)
+        cms = tkFileDialog.askopenfilename(parent=root, initialdir="pwd", title='Choose -out.cms file')
         if len(cms) > 0:
             print "%s selected" % cms
 
@@ -75,37 +74,38 @@ class MergeMDs(Tkinter.Tk):
 
     def MergeTrajectories(self):
 
+        if os.path.exists(os.path.expandvars("$SCHRODINGER")):
+            print "\t"
+            os.system("echo You are using Desmond MD via $SCHRODINGER")
+            print "\t"
+        else:
+            print "Desmond MD not installed or $SCHRODINGER path not set correctly. Exiting..."
+            exit()
+
         print "-------------------------------------------------------------"
         print "Merging both trajectories into one and generating -out.cms..."
         print "-------------------------------------------------------------"
 
         # For Desmond Version >= 2018.1 https://www.schrodinger.com/kb/282357
 
-        if os.path.isfile("/opt/schrodinger2018-3/internal/bin/trj_merge.py"):
-            os.system("/opt/schrodinger2018-3/run trj_merge.py %s %s %s -o NewMergedTrajectory" % (
+        if os.path.exists(os.path.expandvars("$SCHRODINGER/internal/bin/trj_merge.py")):
+            os.system("$SCHRODINGER/run trj_merge.py %s %s %s -o NewMergedTrajectory" % (
             cms, in1_trj, in2_trj))
             os.system("mv NewMergedTrajectory.cms NewMergedTrajectory-out.cms")
-
-        if os.path.isfile("/opt/schrodinger2018-2/internal/bin/trj_merge.py"):
-            os.system("/opt/schrodinger2018-2/run trj_merge.py %s %s %s -o NewMergedTrajectory" % (
-            cms, in1_trj, in2_trj))
-            os.system("mv NewMergedTrajectory.cms NewMergedTrajectory-out.cms")
-
-        if os.path.isfile("/opt/schrodinger2018-1/internal/bin/trj_merge.py"):
-            os.system("/opt/schrodinger2018-1/run trj_merge.py %s %s %s -o NewMergedTrajectory" % (
-            cms, in1_trj, in2_trj))
-            os.system("mv NewMergedTrajectory.cms NewMergedTrajectory-out.cms")
-
+            
         else:  # For Desmond Version < 2018.1 https://www.schrodinger.com/kb/90
-            if os.path.isfile("/opt/schrodinger2017-4/desmond-v5.2/bin/Linux-x86_64/manipulate_trj.py"):
-                os.system("/opt/schrodinger2017-4/run -FROM desmond manipulate_trj.py %s NewMergedTrajectory %s %s" % (
-                cms, in1_trj, in2_trj))
+            os.system("$SCHRODINGER/run -FROM desmond manipulate_trj.py %s NewMergedTrajectory %s %s" % (
+            cms, in1_trj, in2_trj))
+        
+        if os.path.exists("NewMergedTrajectory-out.cms"):
+            print "...Done!" 
+            print "Check your current working directory for new merged trajectory and -out.cms file."
+            print "Thank you for using TrajectoryMergeAssist."
+            print "\t"
+        else:
+            print "Error! New Merged Trajectory not created! Please contact author."
+            print "\t"
 
-            if os.path.isfile("/opt/schrodinger2017-3/desmond-v5.2/bin/Linux-x86_64/manipulate_trj.py"):
-                os.system("/opt/schrodinger2017-3/run -FROM desmond manipulate_trj.py %s NewMergedTrajectory %s %s" % (
-                cms, in1_trj, in2_trj))
-
-        print "...Done!"
         exit()
 
 
