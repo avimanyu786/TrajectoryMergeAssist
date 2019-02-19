@@ -10,7 +10,21 @@ Key features:
 
 2. Generates new "-out.cms" file, ready for use in Maestro if Desmond version is 2018.1 or later.
 
-Please refer to the [Wiki](https://github.com/avimanyu786/TrajectoryMergeAssist/wiki) page for hassle-free usage.
+## Easy Installation:
+
+Download the **[installer](https://github.com/avimanyu786/TrajectoryMergeAssist/releases/download/v2.0/tma-setup.sh)**.
+
+To install, just use a terminal and run:
+
+1. `chmod +x tma-setup.sh`
+
+2. `./tma-setup.sh`
+
+The installer will also set the path for you.
+
+Run _TrajectoryMergeAssist_ GUI with the following simple command:
+
+`tma`
 
 Contributions are most welcome for further improvements and including other molecular dynamics formats to make it universal.
 
