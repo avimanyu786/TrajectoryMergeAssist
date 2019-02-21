@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1243715.svg)](https://doi.org/10.5281/zenodo.1243715)
 
-A python based GUI tool that helps in merging two sequential trajectories on [Desmond MD (molecular dynamics)](http://www.deshawresearch.com/resources_desmond.html) and [GROMACS](http://www.gromacs.org). This is a very useful tool for Bioinformaticians that makes it easier to work with different trajectories generated via extended molecular dynamics simulations on Desmond.
+A python based GUI tool that helps in merging two sequential trajectories on [Desmond MD (molecular dynamics)](http://www.deshawresearch.com/resources_desmond.html) and [GROMACS](http://www.gromacs.org). This is a very useful tool for Bioinformaticians that makes it easier to work with different trajectories generated via extended molecular dynamics simulations on Desmond and GROMACS.
 
 Key features:
 
