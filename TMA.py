@@ -145,6 +145,8 @@ class MergeMDs(Tkinter.Tk):
         print "Merging both trajectories into one and generating .xtc..." 
         print "---------------------------------------------------------" 
 
+	# For GROMACS 2019.1 http://manual.gromacs.org/current/onlinehelp/gmx-trjcat.html
+	
         os.system("gmx trjcat -f %s %s -o NewMergedTrajectory.xtc" % (
             xtc1, xtc2))
             
