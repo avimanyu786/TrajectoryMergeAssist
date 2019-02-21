@@ -162,5 +162,5 @@ class MergeMDs(Tkinter.Tk):
 
 if __name__ == "__main__":
     app = MergeMDs(None)
-    app.title('TrajectoryMergeAssist: Merge Molecular Dynamics Extended Trajectories')
+    app.title('TrajectoryMergeAssist v2.1: Merge Molecular Dynamics Extended Trajectories')
     app.mainloop()
