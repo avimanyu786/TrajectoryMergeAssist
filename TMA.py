@@ -1,4 +1,4 @@
-# TrajectoryMergeAssist v2.0
+# TrajectoryMergeAssist v2.1
 # A python based GUI tool that helps in merging two trajectories on Desmond MD
 
 # Copyright (C) 2019 Avimanyu Bandyopadhyay
@@ -34,45 +34,54 @@ class MergeMDs(Tkinter.Tk):
     def initialize(self):
         self.grid()
 
-        button = Tkinter.Button(self, text='Browse "-out.cms" file', command=self.AskInputFile)
+        button = Tkinter.Button(self, text='Browse Desmond "-out.cms" file', command=self.AskDesmondInputFile)
         button.grid(column=0, row=1)
 
-        button2 = Tkinter.Button(self, text='Choose Trajectory 1', command=self.AskTrajectory1)
+        button2 = Tkinter.Button(self, text='Choose Desmond Trajectory 1', command=self.AskDesmondTrajectory1)
         button2.grid(column=0, row=2)
 
-        button3 = Tkinter.Button(self, text='Choose Trajectory 2', command=self.AskTrajectory2)
+        button3 = Tkinter.Button(self, text='Choose Desmond Trajectory 2', command=self.AskDesmondTrajectory2)
         button3.grid(column=0, row=3)
 
-        button3 = Tkinter.Button(self, text='Merge Trajectories', command=self.MergeTrajectories)
-        button3.grid(column=0, row=4)
+        button4 = Tkinter.Button(self, text='Merge Desmond Trajectories', command=self.MergeDesmondTrajectories)
+        button4.grid(column=0, row=4)
+
+        button5 = Tkinter.Button(self, text='Browse GROMACS Trajectory 1 ".xtc" file', command=self.AskGROMACSTrajectory1)
+        button5.grid(column=1, row=1)
+
+        button6 = Tkinter.Button(self, text='Browse GROMACS Trajectory 2 ".xtc" file', command=self.AskGROMACSTrajectory2)
+        button6.grid(column=1, row=2)
+
+        button7 = Tkinter.Button(self, text='Merge GROMACS Trajectories', command=self.MergeGROMACSTrajectories)
+        button7.grid(column=1, row=3)
 
         self.grid_columnconfigure(0, weight=1)
-        self.resizable(True, False)
+        self.resizable(False, False)
         self.update()
-        self.geometry("400x120")
+        self.geometry("490x120")
 
-    def AskInputFile(self):
+    def AskDesmondInputFile(self):
         
         global cms
         cms = tkFileDialog.askopenfilename(parent=root, initialdir="pwd", title='Choose -out.cms file')
         if len(cms) > 0:
             print "%s selected" % cms
 
-    def AskTrajectory1(self):
+    def AskDesmondTrajectory1(self):
 
         global in1_trj
-        in1_trj = tkFileDialog.askdirectory(parent=root, initialdir="pwd", title='Please Select Trajectory 1')
+        in1_trj = tkFileDialog.askdirectory(parent=root, initialdir="pwd", title='Please Select Desmond Trajectory 1')
         if len(in1_trj) > 0:
             print "You chose %s" % in1_trj
 
-    def AskTrajectory2(self):
+    def AskDesmondTrajectory2(self):
 
         global in2_trj
-        in2_trj = tkFileDialog.askdirectory(parent=root, initialdir="pwd", title='Please Select Trajectory 2')
+        in2_trj = tkFileDialog.askdirectory(parent=root, initialdir="pwd", title='Please Select Desmond Trajectory 2')
         if len(in2_trj) > 0:
             print "You chose %s" % in2_trj
 
-    def MergeTrajectories(self):
+    def MergeDesmondTrajectories(self):
 
         if os.path.exists(os.path.expandvars("$SCHRODINGER")):
             print "\t"
@@ -108,8 +117,50 @@ class MergeMDs(Tkinter.Tk):
 
         exit()
 
+    def AskGROMACSTrajectory1(self):
+
+        global xtc1
+        xtc1 = tkFileDialog.askopenfilename(parent=root, initialdir="pwd", title='Please Select GROMACS Trajectory 1 .xtc file')
+        if len(xtc1) > 0:
+            print "You chose %s" % xtc1
+
+    def AskGROMACSTrajectory2(self):
+
+        global xtc2
+        xtc2 = tkFileDialog.askopenfilename(parent=root, initialdir="pwd", title='Please Select GROMACS Trajectory 2 .xtc file')
+        if len(xtc2) > 0:
+            print "You chose %s" % xtc2
+
+    def MergeGROMACSTrajectories(self):
+
+        if os.path.exists("/usr/local/gromacs"):
+	        print "You are using GROMACS via /usr/local/gromacs"
+	    elif os.path.exists("/usr/share/gromacs"):
+	        print "You are using GROMACS via /usr/share/gromacs"
+	    else:
+	        print "Default GROMACS installation not found. Exiting."
+	        exit()
+
+        print "---------------------------------------------------------" 
+        print "Merging both trajectories into one and generating .xtc..." 
+        print "---------------------------------------------------------" 
+
+        os.system("gmx trjcat -f %s %s -o NewMergedTrajectory.xtc" % (
+            xtc1, xtc2))
+            
+        if os.path.exists("NewMergedTrajectory.xtc"):
+            print "...Done!"
+            print "Check your current working directory for new merged trajectory (.xtc) file."
+            print "Thank you for using TrajectoryMergeAssist."
+            print "\t"
+        else:
+            print "Error! New Merged Trajectory not created! Please contact author."
+            print "\t"
+
+        exit()
+
 
 if __name__ == "__main__":
     app = MergeMDs(None)
-    app.title('TrajectoryMergeAssist: Merge Desmond MD Trajectories')
+    app.title('TrajectoryMergeAssist: Merge Molecular Dynamics Extended Trajectories')
     app.mainloop()
