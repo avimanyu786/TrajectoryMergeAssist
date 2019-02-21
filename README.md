@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1243715.svg)](https://doi.org/10.5281/zenodo.1243715)
 
-A python based GUI tool that helps in merging two sequential trajectories on [Desmond MD (molecular dynamics)](http://www.deshawresearch.com/resources_desmond.html). This is a very useful tool for Bioinformaticians that makes it easier to work with different trajectories generated via extended molecular dynamics simulations on Desmond.
+A python based GUI tool that helps in merging two sequential trajectories on [Desmond MD (molecular dynamics)](http://www.deshawresearch.com/resources_desmond.html) and [GROMACS](http://www.gromacs.org). This is a very useful tool for Bioinformaticians that makes it easier to work with different trajectories generated via extended molecular dynamics simulations on Desmond.
 
 Key features:
 
@@ -10,15 +10,17 @@ Key features:
 
 2. Generates new "-out.cms" file, ready for use in Maestro if Desmond version is 2018.1 or later.
 
+3. Works with GROMACS ".xtc" files.
+
 ## Easy Installation:
 
-Download the **[installer](https://github.com/avimanyu786/TrajectoryMergeAssist/releases/download/v2.0/tma-setup.sh)**.
+Download the **[installer](https://github.com/avimanyu786/TrajectoryMergeAssist/releases/download/v2.1/tma_v2.1-setup.sh)**.
 
 To install, just use a terminal and run:
 
-1. `chmod +x tma-setup.sh`
+1. `chmod +x tma_v2.1-setup.sh`
 
-2. `./tma-setup.sh`
+2. `./tma_v2.1-setup.sh`
 
 The installer will also set the path for you.
 
