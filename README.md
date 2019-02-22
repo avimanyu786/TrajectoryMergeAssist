@@ -1,8 +1,5 @@
 # TrajectoryMergeAssist v2.1
 
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source-200x33.png)](https://opensource.org/)
-
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2574623.svg)](https://doi.org/10.5281/zenodo.2574623)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/avimanyu786/TrajectoryMergeAssist/wiki)
@@ -130,4 +127,6 @@ If *TrajectoryMergeAssist* helped you during your research while managing extend
  doi = {10.7287/peerj.preprints.26920}
 }
 ```
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source-200x33.png)](https://opensource.org/)
 
