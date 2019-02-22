@@ -20,7 +20,7 @@ Key features:
 
 3. Works with GROMACS ".xtc" files.
 
-## Easy Installation:
+## Easy Installation
 
 Download the **[installer](https://github.com/avimanyu786/TrajectoryMergeAssist/releases/download/v2.1/tma_v2.1-setup.sh)**.
 
