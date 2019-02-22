@@ -1,9 +1,8 @@
 dist: xenial
 language: bash
 
-services:
-  - xvfb
+before_script:
+    - sudo apt install xvfb
 
 script:
     - xvfb-run --server-args="-screen 0 1024x768x24" make test
-
