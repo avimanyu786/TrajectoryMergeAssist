@@ -4,6 +4,8 @@ services:
   - xvfb
   
 before_script:
+  - sudo apt install xvfb
+  - sleep 5
   - chmod +x tma_v2.1-setup.sh
 
 script:
