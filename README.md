@@ -1,6 +1,12 @@
 # TrajectoryMergeAssist
 
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source-200x33.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2574623.svg)](https://doi.org/10.5281/zenodo.2574623)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](hhttps://github.com/avimanyu786/TrajectoryMergeAssist/wiki)
+[![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/avimanyu786/TrajectoryMergeAssist/graphs/contributors)
 
 A python based GUI tool that helps in merging two sequential trajectories on [Desmond](http://www.deshawresearch.com/resources_desmond.html) and [GROMACS](http://www.gromacs.org). This is a very useful tool for Bioinformaticians that makes it easier to work with different trajectories generated via extended molecular dynamics simulations on Desmond and GROMACS.
 
@@ -30,4 +36,30 @@ Run _TrajectoryMergeAssist_ GUI with the following simple command:
 
 Contributions are most welcome for further improvements and including other molecular dynamics formats to make it universal.
 
-Bandyopadhyay A. (2018) Improving productivity while managing extensive molecular dynamics simulation data. PeerJ Preprints 6:e26920v1 https://doi.org/10.7287/peerj.preprints.26920v1
+**Citation** [![DOI](https://zenodo.org/badge/DOI/10.7287/peerj.preprints.26920.svg)](https://doi.org/10.7287/peerj.preprints.26920)
+
+If TrajectoryMergeAssist helped you during your research while managing extended molecular dynamics data, please cite it as:
+
+*Bandyopadhyay A. (2018) Improving productivity while managing extensive molecular dynamics simulation data. PeerJ Preprints 6:e26920 https://doi.org/10.7287/peerj.preprints.26920*
+
+*BibTex*:
+
+```
+@article{10.7287/peerj.preprints.26920,
+ title = {Improving productivity while managing extensive molecular dynamics simulation data},
+ author = {Bandyopadhyay, Avimanyu},
+ year = 2018,
+ month = may,
+ keywords = {molecular dynamics, extended simulations, managing data, python, gui},
+ abstract = {
+        This paper discusses the difficulties experienced by bioinformaticians while working with extensive data generated from extended molecular dynamics simulations. For better experimental analysis, it often becomes crucial to conduct simulations up to extended periods of time. When with limited resources, running a complete simulation up to a desired length of time can become quite difficult to be performed at one go. So, a new approach is proposed to simplify handling such data for better productivity.
+      },
+ volume = 6,
+ pages = {e26920},
+ journal = {PeerJ Preprints},
+ issn = {2167-9843},
+ url = {https://doi.org/10.7287/peerj.preprints.26920},
+ doi = {10.7287/peerj.preprints.26920}
+}
+```
+
