@@ -5,7 +5,7 @@
 
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2574623.svg)](https://doi.org/10.5281/zenodo.2574623)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](hhttps://github.com/avimanyu786/TrajectoryMergeAssist/wiki)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/avimanyu786/TrajectoryMergeAssist/wiki)
 [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/avimanyu786/TrajectoryMergeAssist/graphs/contributors)
 
 A python based GUI tool that helps in merging two sequential trajectories on [Desmond](http://www.deshawresearch.com/resources_desmond.html) and [GROMACS](http://www.gromacs.org). This is a very useful tool for Bioinformaticians that makes it easier to work with different trajectories generated via extended molecular dynamics simulations on Desmond and GROMACS.
