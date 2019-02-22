@@ -1,0 +1,7 @@
+language: bash
+
+before_script:
+    - chmod +x tma_v2.1-setup.sh
+
+script:
+    - ./tma_v2.1-setup.sh
