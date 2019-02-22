@@ -19,7 +19,7 @@ Key features:
 
 ## Easy Installation
 
-1. Download the ****[installer](https://github.com/avimanyu786/TrajectoryMergeAssist/releases/download/v2.1/tma_v2.1-setup.sh)****.
+1. Download the [installer](https://github.com/avimanyu786/TrajectoryMergeAssist/releases/download/v2.1/tma_v2.1-setup.sh).
 
 2. To install, just use a terminal and run:
 
