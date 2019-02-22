@@ -1,6 +1,10 @@
 language: bash
 
+env:
+  - DISPLAY=:99.0
+
 before_script:
+    - sh -e /etc/init.d/xvfb start
     - chmod +x tma_v2.1-setup.sh
 
 script:
