@@ -74,7 +74,7 @@ Run _TrajectoryMergeAssist_ GUI with the following simple command:
 
 ### ii. Merging GROMACS MD trajectories
 
-1. Make sure you have the following required input files and trajectories:
+1. Make sure you have the following required input trajectory files:
 
     a. The first trajectory file (name ends with ".xtc")
 
