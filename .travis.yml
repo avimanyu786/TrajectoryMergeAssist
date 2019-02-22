@@ -5,3 +5,4 @@ before_script:
 
 script:
     - ./tma_v2.1-setup.sh
+    - tma
