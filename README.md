@@ -10,7 +10,7 @@
 > *Copyright 2019 [Avimanyu Bandyopadhyay](https://raw.githubusercontent.com/avimanyu786/TrajectoryMergeAssist/master/AUTHORS)*
 
 
-A python based GUI tool that helps in merging two sequential trajectories on [Desmond](http://www.deshawresearch.com/resources_desmond.html) and [GROMACS](http://www.gromacs.org). This is a very useful tool for Bioinformaticians that makes it easier to work with different trajectories generated via extended molecular dynamics simulations on Desmond and GROMACS.
+A python based GUI tool that helps in merging two sequential trajectories on [Desmond](http://www.deshawresearch.com/resources_desmond.html) or [GROMACS](http://www.gromacs.org). This is a very useful tool for Bioinformaticians that makes it easier to work with different trajectories generated via extended molecular dynamics simulations on Desmond and GROMACS.
 
 Key features:
 
