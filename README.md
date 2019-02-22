@@ -127,6 +127,7 @@ If *TrajectoryMergeAssist* helped you during your research while managing extend
  doi = {10.7287/peerj.preprints.26920}
 }
 ```
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://facebook.com/iAvimanyu)
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source-200x33.png)](https://opensource.org/)
 
