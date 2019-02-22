@@ -34,6 +34,72 @@ Run _TrajectoryMergeAssist_ GUI with the following simple command:
 
 `tma`
 
+## Steps to use TrajectoryMergeAssist
+
+### i. Merging Desmond MD trajectories
+
+1. Make sure you have the following required input files and trajectories:
+
+    a. The "-out.cms" file
+
+    b. The first trajectory directory (name ends with "_trj")
+
+    c. The second trajectory directory from an extended Desmond MD simulation.
+
+2.  It is recommended to work with the above files from a location like:
+    
+    /home/username/directory/
+
+3.  Navigate to the directory on a terminal window and run:    
+
+    `tma`
+
+      or  
+
+    `tma-py3`      -- For Python3 Only
+
+4.  Select the "-out.cms" file
+
+5.  Navigate to the two trajectory directories ending with "_trj"
+
+6.  The 3 choices will be visible in the background terminal so that the selections can be confirmed.
+
+7.  Click on "Merge Desmond Trajectories"
+
+8.  Wait until the "...Done!" message
+
+9.  The new merged trajectory along-with the new "-out.cms" file can be found in the same working directory
+
+### ii. Merging GROMACS MD trajectories
+
+1. Make sure you have the following required input files and trajectories:
+
+    a. The first trajectory file (name ends with ".xtc")
+
+    b. The second trajectory file (also ends with ".xtc")
+
+2.  It is recommended to work with the above files from a location like:
+    
+    /home/username/directory/
+
+3.  Navigate to the directory on a terminal window and run:    
+
+    `tma`
+
+     or  
+
+    `tma-py3`      -- For Python3 Only
+
+4.  Choose to the two trajectory files ending with ".xtc"
+
+5.  The 2 choices will be visible in the background terminal so that the selections can be confirmed.
+
+6.  Click on "Merge GROMACS Trajectories"
+
+7.  Wait until the "...Done!" message
+
+8.  The new merged trajectory (".xtc" file) can be found in the same working directory.
+
 Contributions are most welcome for further improvements and including other molecular dynamics formats to make it universal.
 
 ### Citation [![DOI](https://zenodo.org/badge/DOI/10.7287/peerj.preprints.26920.svg)](https://doi.org/10.7287/peerj.preprints.26920)
