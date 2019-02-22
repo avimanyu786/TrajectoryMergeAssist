@@ -92,7 +92,7 @@ Run _TrajectoryMergeAssist_ GUI with the following simple command:
 
     `tma-py3`      -- For Python3 Only
 
-4.  Choose to the two trajectory files ending with ".xtc"
+4.  Choose the two trajectory files ending with ".xtc"
 
 5.  The 2 choices will be visible in the background terminal so that the selections can be confirmed.
 
