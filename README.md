@@ -1,4 +1,4 @@
-# TrajectoryMergeAssist
+# TrajectoryMergeAssist v2.1
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source-200x33.png)](https://opensource.org/)
