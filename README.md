@@ -19,19 +19,19 @@ Key features:
 
 ## Easy Installation
 
-Download the **[installer](https://github.com/avimanyu786/TrajectoryMergeAssist/releases/download/v2.1/tma_v2.1-setup.sh)**.
+1. Download the ****[installer](https://github.com/avimanyu786/TrajectoryMergeAssist/releases/download/v2.1/tma_v2.1-setup.sh)****.
 
-To install, just use a terminal and run:
+2. To install, just use a terminal and run:
 
-1. `chmod +x tma_v2.1-setup.sh`
+    a. `chmod +x tma_v2.1-setup.sh`
 
-2. `./tma_v2.1-setup.sh`
+    b. `./tma_v2.1-setup.sh`
 
-The installer will also set the path for you.
+    The installer will also set the path for you.
 
-Run _TrajectoryMergeAssist_ GUI with the following simple command:
+3. Run _TrajectoryMergeAssist_ GUI with the following simple command:
 
-`tma`
+   `tma`
 
 ## Steps to use TrajectoryMergeAssist
 
