@@ -1,11 +1,10 @@
+dist: xenial
 language: bash
 
 services:
   - xvfb
   
 before_script:
-  - sudo apt install xvfb xserver-common x11-xkb-utils libgl1-mesa-dri
-  - sleep 5
   - chmod +x tma_v2.1-setup.sh
 
 script:
