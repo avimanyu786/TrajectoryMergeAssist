@@ -36,7 +36,7 @@ Run _TrajectoryMergeAssist_ GUI with the following simple command:
 
 Contributions are most welcome for further improvements and including other molecular dynamics formats to make it universal.
 
-***Citation*** [![DOI](https://zenodo.org/badge/DOI/10.7287/peerj.preprints.26920.svg)](https://doi.org/10.7287/peerj.preprints.26920)
+### Citation [![DOI](https://zenodo.org/badge/DOI/10.7287/peerj.preprints.26920.svg)](https://doi.org/10.7287/peerj.preprints.26920)
 
 If TrajectoryMergeAssist helped you during your research while managing extended molecular dynamics data, please cite it as:
 
