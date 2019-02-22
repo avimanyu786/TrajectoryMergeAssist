@@ -46,7 +46,7 @@ Run _TrajectoryMergeAssist_ GUI with the following simple command:
 
     b. The first trajectory directory (name ends with "_trj")
 
-    c. The second trajectory directory from an extended Desmond MD simulation.
+    c. The second trajectory directory from an extended Desmond MD simulation
 
 2.  It is recommended to work with the above files from a location like:
     
@@ -78,7 +78,7 @@ Run _TrajectoryMergeAssist_ GUI with the following simple command:
 
     a. The first trajectory file (name ends with ".xtc")
 
-    b. The second trajectory file (also ends with ".xtc")
+    b. The second trajectory file from an extended GROMACS MD simulation
 
 2.  It is recommended to work with the above files from a location like:
     
