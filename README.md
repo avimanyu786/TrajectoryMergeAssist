@@ -104,7 +104,7 @@ Contributions are most welcome for further improvements and including other mole
 
 ### Citation [![DOI](https://zenodo.org/badge/DOI/10.7287/peerj.preprints.26920.svg)](https://doi.org/10.7287/peerj.preprints.26920)
 
-If TrajectoryMergeAssist helped you during your research while managing extended molecular dynamics data, please cite it as:
+If *TrajectoryMergeAssist* helped you during your research while managing extended molecular dynamics data, please cite it as:
 
 **Bandyopadhyay A. (2018) Improving productivity while managing extensive molecular dynamics simulation data. PeerJ Preprints 6:e26920 https://doi.org/10.7287/peerj.preprints.26920**
 
