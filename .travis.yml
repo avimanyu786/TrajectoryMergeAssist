@@ -13,12 +13,5 @@ env:
   global:
     - DISPLAY=:99
     
-before_install: 
-    - sudo apt-get install xvfb
-    
-before_script:
-    - "sh -e /etc/init.d/xvfb start"
-    - sleep 3 # give xvfb some time to start
-    
 script:
     - xvfb-run --server-args="-screen 0 1024x768x24" make test
