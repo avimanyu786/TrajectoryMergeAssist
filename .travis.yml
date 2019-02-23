@@ -9,17 +9,13 @@ addons:
     packages:
     - xvfb
   
-# set the X11 Display variable as a global environment variable
-env:
-  global:
-    - DISPLAY=:99
-    
 # start xvfb using DISPLAY port
 before_script:
-  - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- $DISPLAY -ac -screen 0 1280x1024x24"
+  - export DISPLAY=':99.0'
+  - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
   - sleep 3
     
 script:
   - chmod +x tma_v2.1-setup.sh
   - ./tma_v2.1-setup.sh
-  - xvfb-run --auto-servernum --server-num=1 --server-args="-screen 0 490x120x24" tma
+  - tma
