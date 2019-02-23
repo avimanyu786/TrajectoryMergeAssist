@@ -18,3 +18,5 @@ before_script:
     
 script:
   - python tma.py
+  - sleep 5
+  - exit
