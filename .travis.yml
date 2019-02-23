@@ -1,21 +1,5 @@
-language: python
-python:
-  - "2.7"
-
-env:
-  global:
-    - DISPLAY=:99
-
-sudo: required
-addons:
-  apt:
-  packages:
-    - python-tk
-    - xvfb
-    
-before_script:
-  - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
+language: bash
     
 script:
-  - python tma.py
-  - exit()
+  - chmod + tma_v2.1-setup.sh
+  - ./tma_v2.1-setup.sh
