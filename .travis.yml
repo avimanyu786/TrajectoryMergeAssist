@@ -1,10 +1,12 @@
-
 language: python
 python:
   - "2.7"
 
-install:
-  - sudo apt install python-tk
+sudo: required
+addons:
+  apt:
+  packages:
+    - python-tk
   
 script:
   - python TMA.py
