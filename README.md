@@ -1,4 +1,4 @@
-# TrajectoryMergeAssist: A Python based GUI utility to simplify extended molecular dynamics simulations on Desmond and GROMACS
+# TrajectoryMergeAssist: A GUI utility to simplify extended molecular dynamics simulations on Desmond and GROMACS
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2574623.svg)](https://doi.org/10.5281/zenodo.2574623)
 [![Build](https://travis-ci.org/avimanyu786/TrajectoryMergeAssist.svg)](https://travis-ci.org/avimanyu786/TrajectoryMergeAssist)
