@@ -1,5 +1,5 @@
 language: bash
     
 script:
-  - chmod + tma_v2.1-setup.sh
+  - chmod +x tma_v2.1-setup.sh
   - ./tma_v2.1-setup.sh
