@@ -22,4 +22,4 @@ before_script:
 script:
   - chmod +x tma_v2.1-setup.sh
   - ./tma_v2.1-setup.sh
-  - xvfb-run --auto-servernum --server-num=1 tma
+  - xvfb-run --auto-servernum --server-num=1 --server-args="-screen 0 1024x768x24" tma
