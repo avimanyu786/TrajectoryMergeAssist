@@ -1,11 +1,10 @@
 
 language: python
-os: linux
-sudo: required
-dist: xenial
+python:
+  - "2.7"
 
-before_script:
-  - sudo apt install tkinter
+install:
+  - sudo apt install python-tk
   
 script:
   - python TMA.py
