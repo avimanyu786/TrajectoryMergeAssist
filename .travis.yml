@@ -14,4 +14,4 @@ env:
     - DISPLAY=:99
     
 script:
-    - xvfb-run --server-args="-screen 0 1024x768x24" make test
+    - xvfb-run
