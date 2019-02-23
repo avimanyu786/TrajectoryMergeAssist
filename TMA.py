@@ -107,13 +107,13 @@ class MergeMDs(Tkinter.Tk):
             cms, in1_trj, in2_trj))
         
         if os.path.exists("NewMergedTrajectory-out.cms"):
-            print "...Done!" 
-            print "Check your current working directory for new merged trajectory and -out.cms file."
-            print "Thank you for using TrajectoryMergeAssist."
-            print "\t"
+		print "...Done!" 
+		print "Check your current working directory for new merged trajectory and -out.cms file."
+		print "Thank you for using TrajectoryMergeAssist."
+		print "\t"
         else:
-            print "Error! New Merged Trajectory not created! Please contact author."
-            print "\t"
+		print "Error! New Merged Trajectory not created! Please contact author."
+		print "\t"
 
         exit()
 
@@ -122,23 +122,23 @@ class MergeMDs(Tkinter.Tk):
         global xtc1
         xtc1 = tkFileDialog.askopenfilename(parent=root, initialdir="pwd", title='Please Select GROMACS Trajectory 1 .xtc file')
         if len(xtc1) > 0:
-            print "You chose %s" % xtc1
+		print "You chose %s" % xtc1
 
     def AskGROMACSTrajectory2(self):
 
         global xtc2
         xtc2 = tkFileDialog.askopenfilename(parent=root, initialdir="pwd", title='Please Select GROMACS Trajectory 2 .xtc file')
         if len(xtc2) > 0:
-            print "You chose %s" % xtc2
+		print "You chose %s" % xtc2
 
     def MergeGROMACSTrajectories(self):
 
         if os.path.exists("/usr/local/gromacs"):
-	        print "You are using GROMACS via /usr/local/gromacs"
+		print "You are using GROMACS via /usr/local/gromacs"
 	    elif os.path.exists("/usr/share/gromacs"):
-	        print "You are using GROMACS via /usr/share/gromacs"
+		print "You are using GROMACS via /usr/share/gromacs"
 	    else:
-	        print "Default GROMACS installation not found. Exiting."
+		print "Default GROMACS installation not found. Exiting."
 	        exit()
 
         print "---------------------------------------------------------" 
@@ -151,15 +151,14 @@ class MergeMDs(Tkinter.Tk):
             xtc1, xtc2))
             
         if os.path.exists("NewMergedTrajectory.xtc"):
-            print "...Done!"
-            print "Check your current working directory for new merged trajectory (.xtc) file."
-            print "Thank you for using TrajectoryMergeAssist."
-            print "\t"
+		print "...Done!"
+		print "Check your current working directory for new merged trajectory (.xtc) file."
+		print "Thank you for using TrajectoryMergeAssist."
+		print "\t"
         else:
-            print "Error! New Merged Trajectory not created! Please contact author."
-            print "\t"
-
-        exit()
+		print "Error! New Merged Trajectory not created! Please contact author."
+		print "\t"
+	exit()
 
 
 if __name__ == "__main__":
