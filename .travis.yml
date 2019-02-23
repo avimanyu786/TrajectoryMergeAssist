@@ -6,18 +6,19 @@ dist: xenial
 
 addons:
   apt:
-  sources:
-    - sourceline: "deb http://us.archive.ubuntu.com/ubuntu/ xenial main universe"
-  packages:
+    packages:
     - xvfb
     
 env:
   global:
     - DISPLAY=:99
-
+    
+before_install: 
+    - sudo apt-get install xvfb
+    
 before_script:
-    - chmod +x tma_v2.1-setup.sh
+    - "sh -e /etc/init.d/xvfb start"
+    - sleep 3 # give xvfb some time to start
     
 script:
-    - ./tma_v2.1-setup.sh
-    - tma
+    - xvfb-run --server-args="-screen 0 1024x768x24" make test
