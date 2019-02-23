@@ -14,12 +14,12 @@ env:
   global:
     - DISPLAY=:99
     
-# start xvfb using the the DISPLAY port
+# start xvfb using DISPLAY port
 before_script:
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- $DISPLAY -ac -screen 0 1280x1024x24"
   - sleep 3
-  - chmod +x tma_v2.1-setup.sh
-  
+    
 script:
+  - chmod +x tma_v2.1-setup.sh
   - ./tma_v2.1-setup.sh
-  - tma
+  - xvfb-run tma
