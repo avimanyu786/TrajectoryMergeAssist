@@ -1,21 +1,11 @@
 
-language: bash
+language: python
 os: linux
 sudo: required
 dist: xenial
 
-addons:
-  apt:
-    packages:
-    - xvfb
-  
-# start xvfb using DISPLAY port
 before_script:
-  - export DISPLAY=':99.0'
-  - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-  - sleep 3
-    
+  - sudo apt install tkinter
+  
 script:
-  - chmod +x tma_v2.1-setup.sh
-  - ./tma_v2.1-setup.sh
-  - tma
+  - python TMA.py
