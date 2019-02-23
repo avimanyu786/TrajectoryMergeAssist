@@ -9,4 +9,4 @@ addons:
     - python-tk
   
 script:
-  - python TMA.py
+  - python tma.py
