@@ -172,7 +172,7 @@ Bandyopadhyay <https://raw.githubusercontent.com/avimanyu786/TrajectoryMergeAssi
    :target: https://doi.org/10.7287/peerj.preprints.26920
 .. |Open Source Love| image:: https://badges.frapsoft.com/os/v1/open-source-200x33.png
    :target: https://opensource.org/
-.. |forthebadge made-with-python| image:: http://ForTheBadge.com/images/badges/made-with-python.svg
+.. |forthebadge made-with-python| image:: https://ForTheBadge.com/images/badges/made-with-python.svg
    :target: https://www.python.org/
-.. |ForTheBadge built-with-love| image:: http://ForTheBadge.com/images/badges/built-with-love.svg
+.. |ForTheBadge built-with-love| image:: https://ForTheBadge.com/images/badges/built-with-love.svg
    :target: https://facebook.com/iAvimanyu
