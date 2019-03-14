@@ -2,6 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2574623.svg)](https://doi.org/10.5281/zenodo.2574623)
 [![Build](https://travis-ci.org/avimanyu786/TrajectoryMergeAssist.svg)](https://travis-ci.org/avimanyu786/TrajectoryMergeAssist)
+[![Documentation Status](https://readthedocs.org/projects/trajectorymergeassist/badge/?version=latest)](https://trajectorymergeassist.readthedocs.io/en/latest/?badge=latest)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/avimanyu786/TrajectoryMergeAssist/wiki)
 [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/avimanyu786/TrajectoryMergeAssist/graphs/contributors)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
