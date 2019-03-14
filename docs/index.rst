@@ -152,10 +152,6 @@ https://doi.org/10.7287/peerj.preprints.26920**
 
 |ForTheBadge built-with-love|
 
-*© `Avimanyu
-Bandyopadhyay <https://raw.githubusercontent.com/avimanyu786/TrajectoryMergeAssist/master/AUTHORS>`__
-2018-19*
-
 .. |DOI| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.2574623.svg
    :target: https://doi.org/10.5281/zenodo.2574623
 .. |Build| image:: https://travis-ci.org/avimanyu786/TrajectoryMergeAssist.svg
