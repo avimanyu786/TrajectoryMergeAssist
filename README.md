@@ -8,7 +8,7 @@
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 
-A python based GUI tool that helps in merging two sequential trajectories on [Desmond](http://www.deshawresearch.com/resources_desmond.html) or [GROMACS](http://www.gromacs.org). This is a very useful tool for Bioinformaticians that makes it easier to work with different trajectories generated via extended molecular dynamics simulations on Desmond and GROMACS.
+A python based GUI tool that helps in merging two sequential trajectories on [Desmond](https://www.deshawresearch.com/resources_desmond.html) or [GROMACS](https://www.gromacs.org). This is a very useful tool for Bioinformaticians that makes it easier to work with different trajectories generated via extended molecular dynamics simulations on Desmond and GROMACS.
 
 Key features:
 
@@ -129,8 +129,8 @@ If *TrajectoryMergeAssist* helped you during your research while managing extend
 }
 ```
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source-200x33.png)](https://opensource.org/)
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+[![forthebadge made-with-python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://facebook.com/iAvimanyu)
+[![ForTheBadge built-with-love](https://ForTheBadge.com/images/badges/built-with-love.svg)](https://facebook.com/iAvimanyu)
 
 *© [Avimanyu Bandyopadhyay](https://raw.githubusercontent.com/avimanyu786/TrajectoryMergeAssist/master/AUTHORS) 2018-19*
