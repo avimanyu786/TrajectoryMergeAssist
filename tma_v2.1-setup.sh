@@ -1,8 +1,8 @@
 #!/bin/sh
-# TrajectoryMergeAssist Setup v1.1
-# A setup tool to easily install TrajectoryMergeAssist v2.1
+# TrajectoryMergeAssist Setup v1.1.1
+# A setup tool to easily install TrajectoryMergeAssist v2.1.1
 
-# Copyright (C) 2019 Avimanyu Bandyopadhyay
+# Copyright (C) 2021 Avimanyu Bandyopadhyay
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -33,8 +33,8 @@ fi
 	
 cd ~
 echo 'Downloading TrajectoryMergeAssist...'
-wget https://github.com/avimanyu786/TrajectoryMergeAssist/releases/download/v2.1/tma_v2.1.tar.gz
-tar xvzf tma_v2.1.tar.gz
+wget https://github.com/avimanyu786/TrajectoryMergeAssist/releases/download/v2.1.1/tma_v2.1.1.tar.gz
+tar xvzf tma_v2.1.1.tar.gz
 echo 'Setting Paths...'
 echo '----------------'
 echo 'export TMAPATH=$HOME/tma_v2.1/bin' >> ~/.bashrc
@@ -44,5 +44,4 @@ echo 'Reloading BASH...'
 echo '----------------------'
 echo 'Installation Complete!'
 echo '----------------------'
-echo 'You can now run TrajectoryMergeAssist v2.1 with command "tma".'
-
+echo 'You can now run TrajectoryMergeAssist v2.1.1 with command "tma".'
