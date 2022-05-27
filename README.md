@@ -133,4 +133,4 @@ If *TrajectoryMergeAssist* helped you during your research while managing extend
 
 [![ForTheBadge built-with-love](https://ForTheBadge.com/images/badges/built-with-love.svg)](https://facebook.com/iAvimanyu)
 
-*© [Avimanyu Bandyopadhyay](https://raw.githubusercontent.com/avimanyu786/TrajectoryMergeAssist/master/AUTHORS) 2018-21*
+*© [Avimanyu Bandyopadhyay](https://raw.githubusercontent.com/avimanyu786/TrajectoryMergeAssist/master/AUTHORS) 2018-22*
